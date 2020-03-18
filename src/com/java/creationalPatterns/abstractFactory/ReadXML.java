@@ -1,4 +1,4 @@
-package com.java.abstractFactory;
+package com.java.creationalPatterns.abstractFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

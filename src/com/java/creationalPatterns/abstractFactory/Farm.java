@@ -1,4 +1,4 @@
-package com.java.abstractFactory;
+package com.java.creationalPatterns.abstractFactory;
 
 //抽象工厂：农场类
 public interface Farm {
@@ -8,7 +8,7 @@ public interface Farm {
 }
 
 //具体工厂 郑州
-class ZZFarm implements Farm{
+class ZZFarm implements Farm {
 
     public Animal newAnimal()
     {
@@ -23,7 +23,7 @@ class ZZFarm implements Farm{
 }
 
 //具体工厂 新乡
-class XXFarm implements Farm{
+class XXFarm implements Farm {
     public Animal newAnimal(){
         System.out.println("新乡养殖场新马出生");
         return new Horse();

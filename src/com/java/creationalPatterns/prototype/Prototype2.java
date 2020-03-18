@@ -1,4 +1,4 @@
-package com.java.prototype;
+package com.java.creationalPatterns.prototype;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ public interface Prototype2 extends Cloneable{
     void computeArea();
 }
 
-class Circle implements Prototype2{
+class Circle implements Prototype2 {
     @Override
     public Object clone(){
         Circle c = null;
@@ -31,7 +31,7 @@ class Circle implements Prototype2{
     }
 }
 
-class Square implements Prototype2{
+class Square implements Prototype2 {
 
     public Object clone()
     {
@@ -73,7 +73,7 @@ class ProtoTypeManager {
         ht.put("circle",new Circle());
         ht.put("square",new Square());
     }
-    public void addshape(String key,Prototype2 obj)
+    public void addshape(String key, Prototype2 obj)
     {
         ht.put(key,obj);
     }

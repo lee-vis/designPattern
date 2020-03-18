@@ -1,4 +1,4 @@
-package com.java.prototype;
+package com.java.creationalPatterns.prototype;
 
 import javax.swing.*;
 import java.awt.*;

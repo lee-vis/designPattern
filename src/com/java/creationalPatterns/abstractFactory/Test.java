@@ -1,4 +1,4 @@
-package com.java.abstractFactory;
+package com.java.creationalPatterns.abstractFactory;
 
 public class Test {
 

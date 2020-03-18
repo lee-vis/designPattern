@@ -1,4 +1,4 @@
-package com.java.factory;
+package com.java.creationalPatterns.factory;
 
 public class FactoryTest {
 
@@ -21,8 +21,9 @@ interface Product{
 
     void show();
 }
+
 //具体产品1，实现产品
-class ConcreteProduct1 implements Product{
+class ConcreteProduct1 implements Product {
 
     @Override
     public void show() {
@@ -31,7 +32,7 @@ class ConcreteProduct1 implements Product{
 }
 
 //具体产品2，实现产品
-class ConcreteProduct2 implements Product{
+class ConcreteProduct2 implements Product {
 
     @Override
     public void show() {
@@ -45,7 +46,7 @@ interface Factory{
 }
 
 //具体工厂1，实现工厂生产产品的方法
-class ConcreteFactory1 implements Factory{
+class ConcreteFactory1 implements Factory {
 
     @Override
     public Product newProduct() {
@@ -55,7 +56,7 @@ class ConcreteFactory1 implements Factory{
 }
 
 //具体工厂2，实现工厂生产产品
-class ConcreteFactory2 implements Factory{
+class ConcreteFactory2 implements Factory {
 
     @Override
     public Product newProduct(){
